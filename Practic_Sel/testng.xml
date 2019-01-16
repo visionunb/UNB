@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Allannotation">
+  <classes>
+  <class name="TestNG.Allannotation"></class>
+  </classes>
+  </test>
+  
+   <test name="GroupTest">
+   <groups>
+   <run>
+   <include name="database"></include>
+   </run>
+   </groups>
+  <classes>
+  <class name="TestNG.GroupTest"></class>
+  </classes>
+  </test>
+  
+   <test name="Parametertest">
+  <classes>
+  <class name="TestNG.Parametertest"></class>
+  <parameter name="username" value="Akash"></parameter>
+  <parameter name="password" value="Akash123"></parameter>
+  </classes>
+  </test>
+  
+  
+  
+  
+  
+</suite> <!-- Suite -->
